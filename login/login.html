@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body
+		{
+			background-image: url(im.jpg);
+			background-repeat: no-repeat;
+		   background-size: 100% ;
+
+		}
+		div.first
+		{
+             background-color:  #ffad33;
+             padding:40px 50px 50px 30px;
+             margin: 90px 450px;
+             opacity: 0.9;
+             border: 5px ridge;
+             border-radius: 5px;
+		}
+		div.first:hover{opacity: 1.0;}
+
+		button.bt
+		{
+			background-color: #3b5998;
+			padding-left: 6px;
+	        	border-radius: 10px;
+	        	border: inset 2px;
+	        	font-size: 22px;
+	        padding-right: 207px;
+	        cursor: pointer;  
+		}
+		.bt:hover{background-color:#395693;
+
+		}
+		button.bt1
+		{
+			background-color:  #ffd9b3;
+			padding-left: 6px;
+			padding-right: 230px;
+			border: inset 2px;
+			cursor: pointer;
+			border-radius: 10px;
+			font-size: 22px;
+		}
+		input
+		{
+			padding-left: 6px;
+			padding-right: 240px;
+			padding-top:  10px;
+			padding-bottom:   10px;
+			border-radius: 9px;
+		}
+		input.one{padding: 8px 60px;
+			border-radius: 7px;
+		}
+		input.one:hover{
+			background-color: #0099ff;
+			color: black;
+			cursor: pointer;
+		}
+		h2{
+			font-size: 29px;
+		}
+		div.s{
+			text-align: left;
+             color: #0000e6;
+	       	}
+	       	div.s:hover{
+	       		color:#800060 ;
+	       		cursor: pointer;
+	       	}
+	       	div.s1{
+			text-align: left;
+             color: #0000e6;
+	       	}
+	       	div.s1:hover{
+	       		color:  #800060;
+	       		cursor: pointer;
+	       	}
+	       	img.im{
+
+	       	}
+	</style>
+</head>
+<body><br>
+	<div class="first" >
+      	<table >
+      	<caption><h2>Login to Food Circle<h2></caption>
+      	<tr><td><a href="https://en-gb.facebook.com/login/"><button class="bt"><img class="im" src="ic.png" height="50px" width="50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> Continue with facebook</b></button><a></td></tr>
+      	<tr><td><a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><button class="bt1"><b><img class="im" src="gic.png" height="50px" width="50px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Continue with google</b></button></a></td></tr>
+      	<tr><td></td></tr></table><hr>
+        <table align="center">
+        <form onsubmit="return val()" method="post">
+      	<tr><td><input type="text" name="text" placeholder="Email" id="emails" autocomplete="off"></td></tr>
+      	<tr><td><span id="mail"></span></td></tr>
+      	<tr><td><input type="password" name="password" placeholder="Password" id="pass" autocomplete="off"></td></tr>
+      	<tr><td><span id="word"></span></td></tr>
+      	<tr ><td colspan="2">    
+
+      		 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+      	<input class="one" type="submit" value="Login"></td></tr>
+      	</form>
+      </table><br><br>
+      <div class="s"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspForgot Password<br></b><br></div>
+      <div class="s1"><b>	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCreate a new account</b>
+
+      </div>
+  </div>
+  <script>
+  	function val()
+  	{
+  	var e = document.getElementById('emails').value;
+  	var x = document.getElementById('pass');
+  
+  		if(e == "")
+  		{
+  			document.getElementById('mail').innerHTML = "name should be filled";
+  			return true;
+  		}
+
+  	    else if(e.indexOf('@')=0)
+  		{
+  			alert("**@ cannot be at this position**");
+  			return false;
+  		}
+  		else if(x.length>6 && x.length<14)
+  		{
+  			alert("**Length should be in between 6 to 14 **");
+  			return false;
+  		}
+  		else
+  		{
+  			alert("ver");
+  		}
+
+  }
+  </script>
+
+</body>
+</html>

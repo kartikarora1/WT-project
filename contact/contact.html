@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style >
+	div
+	{
+		opacity: 0.7;
+		margin: 130px 500px;
+        border: 6px groove black ;
+		background-color:  #cc5266;
+		border-radius: 40px;
+		 
+	}
+	div:hover
+	{
+		opacity: 0.9;
+		color: black;
+
+	}
+	h1
+	{
+		text-align: center;
+		background-color: 	 #e67300;
+		color: black;
+		padding: 10px;
+		font-size: 70px;
+		margin: 60px;
+		opacity: 0.8;
+		border-radius: 10px;
+		border: 4px solid  #ffaa00;
+	}
+	td.ch{
+		color:black;
+        font-size: 25px;
+	}
+	input{
+		padding: 10px;
+	}
+	input.sub{
+		color:  black;
+		background-color: 	#00e600;
+		border: ridge 2px;
+		border-radius: 7px;
+        font-size: 17px;
+        font-weight: bolder;
+
+	}
+	input.sub:hover{background-color: #0099e6;}
+	textarea{padding: 14px;}
+	</style>
+</head>
+<body style=" background-image: url(image.jpg);">
+	<h1><b><u>We would like to hear from you!!</u></b></h1>
+	
+	<div>
+	
+		
+		    <table align="center" cellpadding ="15px" >
+	           <form onsubmit="return validation()">
+		           <tr>
+		           	<td class="ch"><b>Name</b></td>
+		           	<td><input type="text" name="name" placeholder="Name" id="name" autocomplete="off" onfocus="focus(this)"></td>
+		           	<td><span id="fname"></span></td>
+		           </tr>
+		           <tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr>
+		           <tr>
+		           	<td class="ch"><b>Email</b></td>
+		           	<td><input type="text" name="name" placeholder="Email" id="email" autocomplete="off"></td>
+		           	<td><span id="mail"></span></td>
+		           </tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr>
+		            <tr>
+		           	<td class="ch"><b>Mobile no</b></td>
+		           	<td><input type="text" name="name" placeholder="Mobile no" id="mobile" autocomplete="off"></td>
+		           	<td><span id="ph"></span></td>
+		           </tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr>
+		            <tr>
+		           	<td class="ch"><b>Message</b></td>
+		           	<td><textarea name="message" placeholder="Type your Message" id="msg" autocomplete="off"></textarea></td>
+		           	<td><span id="mess"></span></td>
+		           </tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr>
+		           <tr>
+		           	
+		           	<td colspan="2" align="center"><input class="sub" type="submit" name="Send message" value="Send Message" onclick="validation()" ></td>
+		           </tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr>
+	            </form>
+	        </table>   
+</div>
+<script>
+	
+	function focus(element)
+	{
+		element.style.background = "red";
+	}
+</script>
+</body>
+</html>
